@@ -1,6 +1,6 @@
 process.stdin.setEncoding('utf-8');
 process.stdout.write('App is running...');
-var menu = ('n\nType /menu for menu\nType /info to display information\nType /exit to quit app\n\nWaiting for input...\n');
+var menu = ('\nType /menu for menu\nType /info to display information\nType /exit to quit app\n\nWaiting for input...\n');
 process.stdout.write(menu);
 process.stdin.on('readable', function() {
     var input = process.stdin.read();
